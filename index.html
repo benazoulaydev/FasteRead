@@ -1,0 +1,94 @@
+<!doctype html>
+<html ng-app>
+<head>
+<!-- Importations -->
+   <!--import framework angular -->
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.14/angular.min.js"></script>
+   <!-- importation  controller  -->
+  <script src="js/controller.js?5"></script>
+   <!-- importation library bootstrap for responsiveness -->
+  <link rel="stylesheet" href="bootstrap-3.3.4-dist/css/bootstrap.min.css">
+   <!-- Optional theme de bootstrap-->
+  <link rel="stylesheet" href="bootstrap-3.3.4-dist/css/bootstrap-theme.min.css">
+   <!-- css file import for design -->
+  <link rel="stylesheet" href="css/lecteur.css">
+
+</head>
+
+<body ng-controller="FasteRead">
+
+<!-- Title   -->
+
+   <div id="page">
+    <div class="container">   <!--container creation   -->
+     <div class="row">  <!--   --> <!--row  -->
+      <div class="col-xs-12 text-center">
+          <b style=" font-size:80px; font-family: Courier;">FasteRead</b>
+      </div>
+      </div>
+
+	<!-- writing the text -->
+
+	<div class="row">
+      <div class="col-xs-12 ">
+	     <div  id="motActuel" >
+           <div id="linea1" class="linea"></div>
+           <div id="linea2" class="linea"></div>
+           <h3  ng-bind-html="motActuel">{{motActuel}}</h3>
+        </div>
+      </div>
+    </div>
+
+
+	  <div class="row">
+      <div class="col-xs-12 text-center">
+        <button class="btn btn-info" ng-click="commenceLire()" ng-show="!lire" title="Commence Lecture" style="font-size:30px;"><span class="glyphicon glyphicon-play" style="color:Black"></span></button>
+        <button class="btn btn-info" ng-click="arretLire()" ng-show="lire" title="Stop Lecture" style="font-size:30px;"><span class="glyphicon glyphicon-pause" style="color:Black"></span></button>
+        <button class="btn btn-info" ng-click="supprDonnee()" title="Recommence lecture" style="font-size:30px;" ><span class="glyphicon glyphicon-refresh" style="color:Black"></span></button>
+		<button class="btn btn-danger" ng-click="clearTextArea()" style="font-size:30px;" >Delete the text</button>&nbsp;
+
+		<button class="btn btn-info" ng-click="speedUp() " style="font-size:30px;"><span  class="glyphicon glyphicon-chevron-down" title="Plus Doucement" style="color:Black"></button>&nbsp;
+        <button class="btn btn-info" ng-click="speedDown()" title="Plus Vite" style="font-size:30px;"><span class="glyphicon glyphicon-chevron-up" style="color:Black"></button>&nbsp;
+
+
+
+        <br><span>Words already read: {{nbMot}}</span> </br> <!-- display number of words read -->
+
+        <div>
+		<span>Speed: {{vitesse*2}} </span> <!-- display the speed reading-->
+
+      </div>
+   </div>
+
+
+
+    <div class="row">
+      <div class="col-xs-12">
+	  <br>
+        <h4>Copy your text here</h4>
+      </div>
+    </div>
+    <div class="row">
+
+        <textarea ng-model="textALire" class="col-xs-12" rows="10" ng-keypress="reset();">
+
+        </textarea>
+
+		</div>
+		</div>
+     </div>
+     </div>
+
+  <footer>
+   <a href="https://plus.google.com/u/0/104057795698715219817/posts" target="_blank"> Developed by Ben Azoulay</a>
+
+<h4> <center> Copyright 2015 </center></h4>
+ </footer>
+  </body>
+
+
+
+
+
+
+</html>

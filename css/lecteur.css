@@ -1,0 +1,85 @@
+body{
+	background-color: #C0C0C0; /* black background */
+	color: white; /* white text color */
+	
+}
+
+#page{
+	
+	padding-bottom: 180px; /* height grey page */
+
+}
+/* grey color for title and instructions  */
+h2,h4
+{
+	color:#fbfbfb;
+}
+/* rectangle for word to display*/
+#motActuel{
+      width: 830px;  /* size */
+      margin: 0 auto;  /* position n1 */
+      border: 3px solid #808080; /* border size */
+	  border-radius: 15px; /* rounded shape of corners  */
+	  margin-top:50px;  /*distance between title and n1 */
+	  margin-bottom:30px;/*distance  between n1  and buttons */
+	  font-family: Courier; 
+	  background-color: white; /* white color for n1 */
+	  color: black;  
+         	
+        
+}
+/* red letter between up and down lines*/
+#motActuel h3
+{
+	margin-top: 25px; /* distance between word and top */
+	margin-bottom : 25px; /*distance between word and bottom  */
+	font-size:53px; /* size word */
+	
+}
+
+
+#motActuel h3
+{
+	font-weight: bold; 
+}
+
+textarea{
+	
+	color:#000;
+		
+        border-radius: 8px;  /* rounded corner  */
+}
+
+.rouge
+{
+	color:red; 
+}
+
+
+.linea{
+	border: 2px solid #A2A2A2; 
+	 position: absolute; /* lines positions  */
+	
+	width: 2px; 
+	height: 10px; 
+	
+	margin-left: 300px; 
+	
+}
+
+#linea1{
+	
+}
+
+#linea2{
+	margin-top:98px; 
+}
+
+footer{
+	background-color: black;
+	margin-top: 10px; 
+	padding-top: 40px;  
+	padding-bottom: 50px; 
+	text-align: center; 
+
+}
