@@ -3,12 +3,12 @@
 The FasterRead eReader is a tool for mastering reading and improve our capabilities to read faster.
 
 FasterRead offers an alternative text delivery approach that makes you a faster and better reader.
+Test it here : http://www.benazoulayprojects.com/fasteread/
 
 
 ## Installation
 
 Simply download the directory unzip it and click on index.html
-
 
 ## Usage
 
